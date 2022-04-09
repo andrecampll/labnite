@@ -1,6 +1,6 @@
 # Labnite 🧪 
 
-Labnite is your favorite online class platform built with NestJS, Apache Kafka, GraphQL, ReactJS, Next.js and Apollo, following a microsservices architecture.
+Labnite is your favorite online learning platform built with NestJS, Apache Kafka, GraphQL, ReactJS, Next.js and Apollo, following a microsservices architecture.
 
 # Under Development 🏗
 
