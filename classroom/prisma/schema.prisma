@@ -19,8 +19,8 @@ model Student {
 model Course {
   id String @id @default(uuid())
 
-  tile String
-  slug String @unique
+  title String
+  slug  String @unique
 
   enrolledOn Enrollment[]
 
