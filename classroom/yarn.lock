@@ -60,6 +60,15 @@
     ora "5.4.1"
     rxjs "6.6.7"
 
+"@apollo/federation@^0.36.1":
+  version "0.36.1"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.36.1.tgz#25afa0598c701763928de13f6fbbe49dfabdb24e"
+  integrity sha512-SAvW7ZRUEtmAdK+UWRXZxo/wRNVbDDyYbeYJooKAtvc8B4Mly+2PusqBQ+4RuHhg5dSqrv5d6RXJeY9MBiraVA==
+  dependencies:
+    "@apollo/subgraph" "^0.4.1"
+    apollo-server-types "^3.0.2"
+    lodash.xorby "^4.7.0"
+
 "@apollo/protobufjs@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@apollo/protobufjs/-/protobufjs-1.2.2.tgz#4bd92cd7701ccaef6d517cdb75af2755f049f87c"
@@ -78,6 +87,11 @@
     "@types/long" "^4.0.0"
     "@types/node" "^10.1.0"
     long "^4.0.0"
+
+"@apollo/subgraph@^0.4.1":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@apollo/subgraph/-/subgraph-0.4.2.tgz#f8516f1d5e5fbd57189727497ed9f805fa5017c8"
+  integrity sha512-sIGzqfUryW6tS5RPWp1awtO+5CehjPV6xbDrWS4I2Hsj8rug8Y9oiMpcnNk8GaQ1TF3UEf99ZL16mNa4J++IIQ==
 
 "@apollographql/apollo-tools@^0.5.3":
   version "0.5.3"
@@ -1019,6 +1033,15 @@ apollo-server-plugin-base@^3.5.2:
   integrity sha512-SwIf1waDmNDb0kmn57QR++InwK6Iv/X2slpm/aFIoqFBe91r6uJfakJvQZuh8dLEgk68gxqFsT8zHRpxBclE+g==
   dependencies:
     apollo-server-types "^3.5.2"
+
+apollo-server-types@^3.0.2:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/apollo-server-types/-/apollo-server-types-3.5.3.tgz#e874bd99135c5c6550fe5f904b3b521b340e6ea3"
+  integrity sha512-Qf5mMVTDyABEeyjGecwMsk0y0km4KuW8/j/UwBDQkAAW1QRy+w8nqi+wvSoA5hNXiYCdJN4U4nxTxm9+2eiT4w==
+  dependencies:
+    apollo-reporting-protobuf "^3.3.1"
+    apollo-server-caching "^3.3.0"
+    apollo-server-env "^4.2.1"
 
 apollo-server-types@^3.5.2:
   version "3.5.2"
@@ -2031,10 +2054,10 @@ graphql-ws@5.5.5:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.5.5.tgz#f375486d3f196e2a2527b503644693ae3a8670a9"
   integrity sha512-hvyIS71vs4Tu/yUYHPvGXsTgo0t3arU820+lT5VjZS2go0ewp2LqyCgxEN56CzOG7Iys52eRhHBiD1gGRdiQtw==
 
-graphql@^16.3.0:
-  version "16.3.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.3.0.tgz#a91e24d10babf9e60c706919bb182b53ccdffc05"
-  integrity sha512-xm+ANmA16BzCT5pLjuXySbQVFwH3oJctUVdy81w1sV0vBU0KgDdBGtxQOUd5zqOBk/JayAFeG8Dlmeq74rjm/A==
+graphql@15:
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
+  integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -2463,6 +2486,11 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+
+lodash.xorby@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/lodash.xorby/-/lodash.xorby-4.7.0.tgz#9c19a6f9f063a6eb53dd03c1b6871799801463d7"
+  integrity sha1-nBmm+fBjputT3QPBtocXmYAUY9c=
 
 lodash@4.17.21, lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
