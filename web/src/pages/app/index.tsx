@@ -1,19 +1,17 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import {useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import { useGetProductsQuery } from "../../generated/graphql";
+import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
+import { getServerPageGetProducts, ssrGetProducts } from "../../graphql/generated/page";
 import { withApollo } from "../../lib/withApollo";
 
-function App() {
+function Home({ data }) {
   const { user } = useUser();
-
-  const { data } = useGetProductsQuery();
 
   return (
     <div>
       <h1>HELLO</h1>
 
       <pre>
-        {JSON.stringify(data, null, 2)}
+        {JSON.stringify(data.products, null, 2)}
       </pre>
 
       <pre>
@@ -25,6 +23,10 @@ function App() {
   )
 }
 
-export const getServerSideProps = withPageAuthRequired();
+export const getServerSideProps = withPageAuthRequired({
+  getServerSideProps: async (ctx) => getServerPageGetProducts({}, ctx)
+});
 
-export default withApollo(App);
+export default withApollo(
+  ssrGetProducts.withPage()(Home)
+);
